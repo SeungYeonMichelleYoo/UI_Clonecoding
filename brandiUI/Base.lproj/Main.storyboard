@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="brandiUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zsU-vV-Gal">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lyc-J2-H1U" customClass="ContainerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="980"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="left" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YX4-b0-rZZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="794"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ofr-Ng-7J3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVj-xg-VKl">
+                                                                <rect key="frame" x="0.0" y="0.0" width="231" height="50"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="brandiLogo.jpeg">
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="medium" weight="thin"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQY-qY-DHV">
+                                                                <rect key="frame" x="231" y="0.0" width="89.5" height="50"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="search.jpeg"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzb-QC-sEi">
+                                                                <rect key="frame" x="320.5" y="0.0" width="93.5" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="DE7-fF-sga"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="shoppingList.jpeg"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" priority="50" constant="50" id="0yP-Wn-akg"/>
+                                                            <constraint firstAttribute="bottom" secondItem="iVj-xg-VKl" secondAttribute="bottom" id="7sx-FG-T5m"/>
+                                                            <constraint firstItem="iVj-xg-VKl" firstAttribute="leading" secondItem="ofr-Ng-7J3" secondAttribute="leading" id="Pf6-d5-gsh"/>
+                                                            <constraint firstItem="cQY-qY-DHV" firstAttribute="top" secondItem="ofr-Ng-7J3" secondAttribute="top" id="Xf4-jt-QGf"/>
+                                                            <constraint firstAttribute="bottom" secondItem="cQY-qY-DHV" secondAttribute="bottom" id="Yyn-NB-Qpq"/>
+                                                            <constraint firstItem="iVj-xg-VKl" firstAttribute="top" secondItem="ofr-Ng-7J3" secondAttribute="top" id="b9s-FW-Vnl"/>
+                                                            <constraint firstAttribute="width" priority="50" constant="410" id="d3r-Gc-sDh"/>
+                                                            <constraint firstItem="cQY-qY-DHV" firstAttribute="leading" secondItem="iVj-xg-VKl" secondAttribute="trailing" constant="30" id="oCr-h9-FuG"/>
+                                                            <constraint firstItem="dzb-QC-sEi" firstAttribute="leading" secondItem="cQY-qY-DHV" secondAttribute="trailing" id="z4f-99-GqW"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="daC-xX-TDs">
+                                                        <rect key="frame" x="0.0" y="50" width="414" height="30"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocj-bw-986">
+                                                                <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="홈">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiE-aE-4I0">
+                                                                <rect key="frame" x="69" y="0.0" width="69" height="30"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="혜택존">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QY-mL-DiH">
+                                                                <rect key="frame" x="138" y="0.0" width="69" height="30"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="베스트">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvJ-P0-RUy">
+                                                                <rect key="frame" x="207" y="0.0" width="69" height="30"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="신상 5%">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6v-sb-hu8">
+                                                                <rect key="frame" x="276" y="0.0" width="69" height="30"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="특가">
+                                                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdU-13-pYr">
+                                                                <rect key="frame" x="345" y="0.0" width="69" height="30"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="스토어">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="gpT-Vs-mAs"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLw-VU-p3a" customClass="배너">
+                                                        <rect key="frame" x="0.0" y="80" width="414" height="300"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="5cK-Fr-lDK"/>
+                                                            <constraint firstAttribute="height" constant="300" id="ZA2-SV-7f9"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button" image="secondLogo.jpeg"/>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9D2-Yt-Mlq">
+                                                        <rect key="frame" x="0.0" y="380" width="414" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="fRa-wA-Iga"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button" image="freeDeliveryImage.jpeg"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j9-ws-NH3">
+                                                        <rect key="frame" x="0.0" y="480" width="414" height="34"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="오늘의 인기상품! ">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuQ-UV-Lpu">
+                                                        <rect key="frame" x="0.0" y="514" width="414" height="32"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="지금 주문하면 내일(수) 도착">
+                                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                                        </state>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="N2p-vJ-EuD">
+                                                        <rect key="frame" x="0.0" y="546" width="414" height="150"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Eq-3S-l5h">
+                                                                <rect key="frame" x="0.0" y="0.0" width="118" height="150"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="photo1.jpeg"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEO-z2-CTG">
+                                                                <rect key="frame" x="148" y="0.0" width="118" height="150"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="photo2.jpeg"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7g-qB-9cU">
+                                                                <rect key="frame" x="296" y="0.0" width="118" height="150"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="photo3.jpeg"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="150" id="Xoo-aR-mpP"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XZB-eU-fVy">
+                                                        <rect key="frame" x="0.0" y="696" width="414" height="34"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSA-ny-sE2">
+                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="34"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="[쿠폰] 보카시 반팔 니트">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBs-x2-MRq">
+                                                                <rect key="frame" x="138" y="0.0" width="138" height="34"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="[베이직 3컬러] 핀턱 팬츠">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcH-Hu-fJv">
+                                                                <rect key="frame" x="276" y="0.0" width="138" height="34"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="스판 청바지">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jjH-PM-Nlm">
+                                                        <rect key="frame" x="0.0" y="730" width="414" height="34"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe6-HR-Fba">
+                                                                <rect key="frame" x="0.0" y="0.0" width="69" height="34"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="5%">
+                                                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrw-Al-BrG">
+                                                                <rect key="frame" x="69" y="0.0" width="69" height="34"/>
+                                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="25,000"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDC-Zg-ZP2">
+                                                                <rect key="frame" x="138" y="0.0" width="69" height="34"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="10%">
+                                                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocf-0t-Heg">
+                                                                <rect key="frame" x="207" y="0.0" width="69" height="34"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="42,000">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8d-sC-BgN">
+                                                                <rect key="frame" x="276" y="0.0" width="69" height="34"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="13%">
+                                                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNE-lY-JDW">
+                                                                <rect key="frame" x="345" y="0.0" width="69" height="34"/>
+                                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="36,500">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Ru9-6R-Eyr">
+                                                        <rect key="frame" x="0.0" y="764" width="414" height="30"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yuo-EP-xg4">
+                                                                <rect key="frame" x="0.0" y="0.0" width="104.5" height="30"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="onedayDelivery.jpeg"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zY-lg-Tga">
+                                                                <rect key="frame" x="154.5" y="0.0" width="105" height="30"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="onedayDelivery.jpeg"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VS3-zl-UUK">
+                                                                <rect key="frame" x="309.5" y="0.0" width="104.5" height="30"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="onedayDelivery.jpeg"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="5nh-VN-yDF"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="3j9-ws-NH3" firstAttribute="top" secondItem="9D2-Yt-Mlq" secondAttribute="bottom" constant="20" id="52G-Mx-AI6"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="YX4-b0-rZZ" secondAttribute="trailing" id="5lx-Rx-Z8q"/>
+                                            <constraint firstItem="YX4-b0-rZZ" firstAttribute="leading" secondItem="Lyc-J2-H1U" secondAttribute="leading" id="HRG-Ch-Vxh"/>
+                                            <constraint firstItem="YX4-b0-rZZ" firstAttribute="top" secondItem="Lyc-J2-H1U" secondAttribute="top" id="gMJ-cq-Xf8"/>
+                                            <constraint firstAttribute="bottom" secondItem="YX4-b0-rZZ" secondAttribute="bottom" id="qVq-08-rWF"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Lyc-J2-H1U" firstAttribute="leading" secondItem="Ku4-Xj-dg8" secondAttribute="leading" id="2k6-ii-bjK"/>
+                                    <constraint firstItem="Lyc-J2-H1U" firstAttribute="width" secondItem="Ha0-V0-56e" secondAttribute="width" id="aaW-ba-fGT"/>
+                                    <constraint firstItem="Lyc-J2-H1U" firstAttribute="bottom" secondItem="Ku4-Xj-dg8" secondAttribute="bottom" id="aoi-ai-uAd"/>
+                                    <constraint firstItem="Lyc-J2-H1U" firstAttribute="top" secondItem="Ku4-Xj-dg8" secondAttribute="top" id="trv-KW-baM"/>
+                                    <constraint firstItem="Lyc-J2-H1U" firstAttribute="trailing" secondItem="Ku4-Xj-dg8" secondAttribute="trailing" id="ylb-li-YK9"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Ku4-Xj-dg8"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Ha0-V0-56e"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zsU-vV-Gal" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6C4-Hx-9gK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zsU-vV-Gal" secondAttribute="trailing" id="f1j-JC-en2"/>
+                            <constraint firstAttribute="bottom" secondItem="zsU-vV-Gal" secondAttribute="bottom" id="gLs-LQ-jJb"/>
+                            <constraint firstItem="zsU-vV-Gal" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pZf-6n-I9O"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brandiLogo.jpeg" width="411" height="146"/>
+        <image name="freeDeliveryImage.jpeg" width="990" height="201"/>
+        <image name="onedayDelivery.jpeg" width="194" height="58"/>
+        <image name="photo1.jpeg" width="331" height="357"/>
+        <image name="photo2.jpeg" width="320" height="366"/>
+        <image name="photo3.jpeg" width="309" height="349"/>
+        <image name="search.jpeg" width="127" height="127"/>
+        <image name="secondLogo.jpeg" width="1080" height="551"/>
+        <image name="shoppingList.jpeg" width="134" height="126"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
